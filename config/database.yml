@@ -1,0 +1,21 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  username: gamification
+  password: gamification
+  host: localhost
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: gamification_development
+
+test:
+  <<: *default
+  database: gamification_test
+
+production:
+  <<: *default
+  database: gamification_production
+  username: gamification
+  password: gamification
