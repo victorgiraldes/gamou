@@ -12,6 +12,12 @@
   },
   "version": "0.1.0",
   "devDependencies": {
+    "@prettier/plugin-ruby": "^1.5.5",
+    "prettier": "^2.3.0",
     "webpack-dev-server": "^3.11.2"
+  },
+  "scripts": {
+    "prettier:format": "prettier --write \"app/**/*.rb\"",
+    "prettier:check": "prettier -c \"app/**/*.rb\""
   }
 }
