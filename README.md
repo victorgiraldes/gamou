@@ -13,14 +13,14 @@ _This project aims to retain customers and stores through a loyalty system._
 
 This project uses lot of stuff as:
 
-- [Haml](https://github.com/haml/haml)
+- [TailwindCSS](https://tailwindcss.com/)
 - [Devise](https://github.com/heartcombo/devise)
 - [RSpec](https://github.com/rspec/rspec-rails)
 - [Prettier](https://github.com/prettier/plugin-ruby)
 
 ## Getting Started
 
-First, install the project and dependences:
+Install the project and dependences:
 
 - git clone git@github.com:vczb/gamification.git
 - cd gamification
@@ -32,13 +32,15 @@ First, install the project and dependences:
 
 ## Commands
 
-| cmd                  | description                      |
-| -------------------- | -------------------------------- |
-| rails s              | Run the app on localhost:3000    |
-| rails c              | Open app console                 |
-| rspec                | Run all tests                    |
-| yarn prettier:format | Format all `rb` and `haml` files |
-| yarn prettier:check  | Check prettier format            |
+Available commands
+
+| cmd                  | description                   |
+| -------------------- | ----------------------------- |
+| rails s              | Run the app on localhost:3000 |
+| rails c              | Open app console              |
+| rspec                | Run all tests                 |
+| yarn prettier:format | Format all `rb` files         |
+| yarn prettier:check  | Check prettier format         |
 
 ## Recommended extensions for VSCode
 
@@ -56,7 +58,7 @@ _config your settings.json_
 
 ## Contributing
 
-Thank you for your interest in contributing to the project, see the [guide](./CONTRIBUTING) for more information
+Thank you for your interest in contributing to the project, see the [guide](./CONTRIBUTING.md) for more information
 
 ## Licence
 
