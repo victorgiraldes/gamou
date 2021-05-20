@@ -3,7 +3,7 @@ pt-BR:
   activerecord:
     errors:
       messages:
-        record_invalid: "A validação falhou: %{errors}"
+        record_invalid: 'A validação falhou: %{errors}'
         restrict_dependent_destroy:
           has_one: Não é possível excluir o registro pois existe um %{record} dependente
           has_many: Não é possível excluir o registro pois existem %{record} dependentes
@@ -39,9 +39,9 @@ pt-BR:
       - sexta-feira
       - sábado
     formats:
-      default: "%d/%m/%Y"
-      long: "%d de %B de %Y"
-      short: "%d de %B"
+      default: '%d/%m/%Y'
+      long: '%d de %B de %Y'
+      short: '%d de %B'
     month_names:
       -
       - janeiro
@@ -86,19 +86,19 @@ pt-BR:
         other: mais de %{count} anos
       x_seconds:
         one: 1 segundo
-        other: "%{count} segundos"
+        other: '%{count} segundos'
       x_minutes:
         one: 1 minuto
-        other: "%{count} minutos"
+        other: '%{count} minutos'
       x_days:
         one: 1 dia
-        other: "%{count} dias"
+        other: '%{count} dias'
       x_months:
         one: 1 mês
-        other: "%{count} meses"
+        other: '%{count} meses'
       x_years:
         one: 1 ano
-        other: "%{count} anos"
+        other: '%{count} anos'
     prompts:
       second: Segundo
       minute: Minuto
@@ -107,7 +107,7 @@ pt-BR:
       month: Mês
       year: Ano
   errors:
-    format: "%{attribute} %{message}"
+    format: '%{attribute} %{message}'
     messages:
       accepted: deve ser aceito
       blank: não pode ficar em branco
@@ -122,7 +122,7 @@ pt-BR:
       invalid: não é válido
       less_than: deve ser menor que %{count}
       less_than_or_equal_to: deve ser menor ou igual a %{count}
-      model_invalid: "A validação falhou: %{errors}"
+      model_invalid: 'A validação falhou: %{errors}'
       not_a_number: não é um número
       not_an_integer: não é um número inteiro
       odd: deve ser ímpar
@@ -131,19 +131,19 @@ pt-BR:
       required: é obrigatório(a)
       taken: já está em uso
       too_long:
-        one: "é muito longo (máximo: 1 caracter)"
-        other: "é muito longo (máximo: %{count} caracteres)"
+        one: 'é muito longo (máximo: 1 caracter)'
+        other: 'é muito longo (máximo: %{count} caracteres)'
       too_short:
-        one: "é muito curto (mínimo: 1 caracter)"
-        other: "é muito curto (mínimo: %{count} caracteres)"
+        one: 'é muito curto (mínimo: 1 caracter)'
+        other: 'é muito curto (mínimo: %{count} caracteres)'
       wrong_length:
         one: não possui o tamanho esperado (1 caracter)
         other: não possui o tamanho esperado (%{count} caracteres)
     template:
-      body: "Por favor, verifique o(s) seguinte(s) campo(s):"
+      body: 'Por favor, verifique o(s) seguinte(s) campo(s):'
       header:
-        one: "Não foi possível gravar %{model}: 1 erro"
-        other: "Não foi possível gravar %{model}: %{count} erros"
+        one: 'Não foi possível gravar %{model}: 1 erro'
+        other: 'Não foi possível gravar %{model}: %{count} erros'
   helpers:
     select:
       prompt: Por favor selecione
@@ -154,22 +154,22 @@ pt-BR:
   number:
     currency:
       format:
-        delimiter: "."
-        format: "%u %n"
+        delimiter: '.'
+        format: '%u %n'
         precision: 2
-        separator: ","
+        separator: ','
         significant: false
         strip_insignificant_zeros: false
         unit: R$
     format:
-      delimiter: "."
+      delimiter: '.'
       precision: 3
-      separator: ","
+      separator: ','
       significant: false
       strip_insignificant_zeros: false
     human:
       decimal_units:
-        format: "%n %u"
+        format: '%n %u'
         units:
           billion:
             one: bilhão
@@ -184,14 +184,14 @@ pt-BR:
           trillion:
             one: trilhão
             other: trilhões
-          unit: ""
+          unit: ''
       format:
-        delimiter: ""
+        delimiter: ''
         precision: 3
         significant: true
         strip_insignificant_zeros: true
       storage_units:
-        format: "%n %u"
+        format: '%n %u'
         units:
           byte:
             one: Byte
@@ -204,20 +204,118 @@ pt-BR:
           tb: TB
     percentage:
       format:
-        delimiter: "."
-        format: "%n%"
+        delimiter: '.'
+        format: '%n%'
     precision:
       format:
-        delimiter: "."
+        delimiter: '.'
   support:
     array:
-      last_word_connector: " e "
-      two_words_connector: " e "
-      words_connector: ", "
+      last_word_connector: ' e '
+      two_words_connector: ' e '
+      words_connector: ', '
   time:
-    am: ""
+    am: ''
     formats:
-      default: "%a, %d de %B de %Y, %H:%M:%S %z"
-      long: "%d de %B de %Y, %H:%M"
-      short: "%d de %B, %H:%M"
-    pm: ""
+      default: '%a, %d de %B de %Y, %H:%M:%S %z'
+      long: '%d de %B de %Y, %H:%M'
+      short: '%d de %B, %H:%M'
+    pm: ''
+
+  web:
+    title: Gamou - Programa de fidelidade
+    enterprise:
+      name: Gamou
+    header:
+      login: Entrar
+    footer:
+      title: Vamos manter contato!
+      subtitle: Encontre-nos em qualquer uma dessas plataformas.
+      copyright: Gamou © 2021. Todos os diretos reservados.
+      developed_by:
+        author: vczb
+        message: Desenvolvido por
+      menu:
+        useful_links: Links Úteis
+        other_resources: Outros Recursos
+        about_us: Sobre Nós
+        blog: Blog
+        our_plans: Nossos Planos
+        terms: Termos & Condições
+        privacy_policy: Política de Privacidade
+        contact_us: Entre em Contato
+    form:
+      contact:
+        title: Quer mandar uma mensagem ?
+        subtitle: Dui ut ornare lectus sit amet est placerat.
+        cta:
+          title: Enviar mensagem
+        name:
+          label: Nome completo
+          placeholder: Nome completo
+        email:
+          label: Email
+          placeholder: Email
+        message:
+          label: Mensagem
+          placeholder: Digite uma mensagem...
+    home:
+      banner:
+        title: Fidelizar nunca foi tão fácil
+        subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi quis commodo odio aenean sed. Nisl purus in mollis nunc sed id.
+      advantages:
+        first:
+          title: Conquiste
+          subtitle: Lacinia quis vel eros donec ac odio tempor orci. Enim nec dui nunc mattis enim ut tellus. Ultrices vitae auctor bibendum.
+        second:
+          title: Retenha
+          subtitle: In mollis nunc sed id semper. Cursus metus aliquam eleifend mi in nulla. Est lorem ipsum dolor sit amet.
+        third:
+          title: Fidelize
+          subtitle: Sed risus ultricies tristique nulla aliquet enim tortor at. Velit ut tortor pretium viverra suspendisse potenti nullam.
+      relationship:
+        title: Relacionamento com a base de clientes
+        subtitle:
+          first: Ornare massa eget egestas purus viverra accumsan in. Odio euismod lacinia at quis risus sed vulputate.
+          second: Id donec ultrices tincidunt arcu non sodales neque sodales ut. Vitae aliquet nec ullamcorper sit.
+        cta: Quero saber mais
+      real_time:
+        title: Acompanhe em tempo real
+        subtitle: Quis auctor elit sed vulputate mi. Donec pretium vulputate sapien nec. Nulla pellentesque dignissim enim sit amet venenatis urna.
+      automated:
+        title: Completa e Automatizada
+        subtitle: Fusce id velit ut tortor pretium viverra suspendisse potenti. Ultrices in iaculis nunc sed augue lacus viverra vitae congue.
+        functionalities:
+          first: Fácil de usar
+          second: Painel de controle
+          third: Acesse de qualquer lugar
+      our_plans:
+        title: Conheça nosssos planos
+        subtitle: At elementum eu facilisis sed odio morbi quis commodo odio. Cras pulvinar mattis nunc sed blandit. Ut placerat orci nulla pellentesque dignissim.
+        plans:
+          go: Acessar
+          trial:
+            title: Grátis
+            subtitle: 30 dias
+          monthly:
+            title: R$ 50,00
+            subtitle: Mensal
+          semiannual:
+            title: R$ 30,00
+            subtitle: Semestral
+          annual:
+            title: R$ 25,00
+            subtitle: Anual
+      innovation:
+        title: Tecnologia de ponta
+        subtitle: Vel turpis nunc eget lorem dolor sed. Vulputate sapien nec sagittis aliquam malesuada bibendum arcu vitae. Tempus egestas sed sed risus pretium. Pulvinar pellentesque habitant morbi tristique senectus et netus et.
+        seals:
+          first:
+            title: Produto certificado
+            subtitle: Integer vitae justo eget magna fermentum ac auctor augue mauris augue neque grasvda.
+          second:
+            title: Segurança de dados
+            subtitle: Faucibus nisl tincidunt eget nullam non nisi viverra accumsan in nisl nisi scelerisque.
+          third:
+            title: Atualizações frequentes
+            subtitle: Elementum nibh tellus molestie nunc. Malesuada fames ac eget aliquet viverra tellus in hac.
