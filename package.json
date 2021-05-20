@@ -23,7 +23,7 @@
     "webpack-dev-server": "^3.11.2"
   },
   "scripts": {
-    "prettier:format": "prettier --write \"app/**/*.rb\"",
-    "prettier:check": "prettier -c \"app/**/*.rb\""
+    "prettier:format": "prettier --write \"app/**/*.{rb, erb}\"",
+    "prettier:check": "prettier -c \"app/**/*.{rb, erb}\""
   }
 }

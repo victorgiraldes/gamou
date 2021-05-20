@@ -51,6 +51,6 @@ jobs:
         run: |
           bundle exec rspec
 
-      - name: Prettier RB files Check
+      - name: Run Prettier Check
         run: |
-          yarn run prettier -c "app/**/*.rb"
+          yarn prettier:check

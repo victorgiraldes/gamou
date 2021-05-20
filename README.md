@@ -15,7 +15,7 @@ This project uses lot of stuff as:
 
 - [RSpec](https://github.com/rspec/rspec-rails)
 - [Devise](https://github.com/heartcombo/devise)
-- [Prettier](https://github.com/prettier/plugin-ruby)
+- [Prettier](https://prettier.io/)
 - [Simple Form](https://github.com/heartcombo/simple_form)
 - [Tailwind CSS](https://tailwindcss.com/)
 
@@ -35,13 +35,13 @@ Install the project and dependences:
 
 Available commands
 
-| cmd                  | description                   |
-| -------------------- | ----------------------------- |
-| rails s              | Run the app on localhost:3000 |
-| rails c              | Open app console              |
-| rspec                | Run all tests                 |
-| yarn prettier:format | Format all `rb` files         |
-| yarn prettier:check  | Check prettier format         |
+| cmd                  | description                     |
+| -------------------- | ------------------------------- |
+| rails s              | Run the app on localhost:3000   |
+| rails c              | Open app console                |
+| rspec                | Run all tests                   |
+| yarn prettier:format | Format all `rb` and `erb` files |
+| yarn prettier:check  | Check prettier format           |
 
 ## Recommended extensions for VSCode
 
@@ -52,8 +52,13 @@ _config your settings.json_
 
 ```
 {
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "[ruby]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[erb]": {
+    "editor.defaultFormatter": "aliariff.vscode-erb-beautify"
+  }
 }
 ```
 
