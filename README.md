@@ -13,10 +13,11 @@ _This project aims to retain customers and stores through a loyalty system._
 
 This project uses lot of stuff as:
 
-- [TailwindCSS](https://tailwindcss.com/)
-- [Devise](https://github.com/heartcombo/devise)
 - [RSpec](https://github.com/rspec/rspec-rails)
+- [Devise](https://github.com/heartcombo/devise)
 - [Prettier](https://github.com/prettier/plugin-ruby)
+- [Simple Form](https://github.com/heartcombo/simple_form)
+- [Tailwind CSS](https://tailwindcss.com/)
 
 ## Getting Started
 
