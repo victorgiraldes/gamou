@@ -18,6 +18,7 @@ This project uses lot of stuff as:
 - [Prettier](https://prettier.io/)
 - [Simple Form](https://github.com/heartcombo/simple_form)
 - [Tailwind CSS](https://tailwindcss.com/)
+- [Font Awesome](https://fontawesome.com/)
 
 ## Getting Started
 
@@ -35,13 +36,15 @@ Install the project and dependences:
 
 Available commands
 
-| cmd                  | description                     |
-| -------------------- | ------------------------------- |
-| rails s              | Run the app on localhost:3000   |
-| rails c              | Open app console                |
-| rspec                | Run all tests                   |
-| yarn prettier:format | Format all `rb` and `erb` files |
-| yarn prettier:check  | Check prettier format           |
+| cmd                    | description                      |
+| ---------------------- | -------------------------------- |
+| rails s                | Run the app on localhost:3000    |
+| rails c                | Open app console                 |
+| rspec                  | Run all tests                    |
+| bin/webpack-dev-server | Runs webpack as development mode |
+| bin/webpack            | Build webpack to production      |
+| yarn prettier:format   | Format all `rb` and `erb` files  |
+| yarn prettier:check    | Check prettier format            |
 
 ## Recommended extensions for VSCode
 
