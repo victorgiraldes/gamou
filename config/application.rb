@@ -14,7 +14,7 @@ def set_locate_configs_and_timezone
   config.i18n.default_locale = 'pt-BR'
 end
 
-module Gamification
+module Gamou
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.1

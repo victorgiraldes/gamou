@@ -1,11 +1,11 @@
-# How to Contribute to Gamification
+# How to Contribute to Gamou
 
-Gamification is a fully open source project. See the LICENSE file for licensing information.
+Gamou is a fully open source project. See the LICENSE file for licensing information.
 
-* Fork this repository
-* Create a new branch
-* Run all tests (`rspec`)
-* Check linter format (`yarn prettier:check`)
-* Submit us a pull request
+- Fork this repository
+- Create a new branch
+- Run all tests (`rspec`)
+- Check linter format (`yarn prettier:check`)
+- Submit us a pull request
 
 #### Thank you

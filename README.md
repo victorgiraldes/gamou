@@ -1,13 +1,13 @@
-# GAMIFICATION
+# GAMOU
 
-_This project aims to retain customers and stores through a loyalty system._
+_Gamou is a gamification project that aims to retain customers to stores through a web system._
 
 ## Required versions
 
 - Ruby _3.0.0_
 - Rails _6.1.3_
-- Postgres _13.2.1_
 - Node _14.0.0_
+- Postgres _13.2.1_
 
 ## What is inside?
 
@@ -24,8 +24,8 @@ This project uses lot of stuff as:
 
 Install the project and dependences:
 
-- git clone git@github.com:vczb/gamification.git
-- cd gamification
+- git clone git@github.com:vczb/gamou.git
+- cd gamou
 - bundle install
 - yarn install
 - add or database configurations on config/database.yml
