@@ -28,7 +28,7 @@ Install the project and dependences:
 - cd gamou
 - bundle install
 - yarn install
-- add or database configurations on config/database.yml
+- add or database configurations on `config/database.yml`
 - rails db:create
 - rails db:migrate
 
