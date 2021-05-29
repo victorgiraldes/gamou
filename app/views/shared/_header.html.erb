@@ -10,12 +10,14 @@
     </div>
     <div class="lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none hidden" id="example-navbar-warning">
       <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
-        <li class="flex items-center">
-          <a class="btn-primary btn-small" href="/users/sign_in">
-            <i class="fas fa-sign-in-alt"></i>
-            <%= t 'web.header.login' %>
-          </a>
-        </li>
+        <% unless ['sessions', 'registrations', 'passwords'].include? controller_name  %>
+          <li class="flex items-center">
+            <a class="btn-primary btn-small" href="/users/sign_in">
+              <i class="fas fa-sign-in-alt"></i>
+              <%= t 'web.header.login' %>
+            </a>
+          </li>
+        <% end %>
       </ul>
     </div>
   </div>
