@@ -2,6 +2,10 @@
 
 Gamou is a fully open source project. See the [LICENSE](./LICENSE) file for licensing information.
 
+Before collaborating with the project, please read our [code of conduct](./CODE_OF_CONDUCT.md).
+
+See our [Wiki](https://github.com/vczb/gamou/wiki) for more information about the project
+
 ---
 
 ### Getting starter
@@ -10,9 +14,25 @@ We are very happy with your interest in collaborating on the project, before sta
 
 We use [kanban](https://github.com/vczb/gamou/projects/1) as a workflow, take a look there and see what's going on
 
-### First prepare you setup
+---
+
+## Required versions
+
+- Ruby _3.0.0_
+- Rails _6.1.3_
+- Node _14.0.0_
+- Postgres _13.2.1_
 
 ---
+
+## Contribution Prerequisites
+
+- You are familiar with Git.
+- Be curious and enjoy solving problems.
+
+---
+
+### Prepare your setup
 
 Importantly, add an [SSH key](https://help.github.com/en/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) to your github account.
 
@@ -31,90 +51,69 @@ git clone -o upstream git@github.com:vczb/gamou.git
 
 [Fork](https://docs.github.com/en/github/getting-started-with-github/quickstart/fork-a-repo) the repository
 
+Enter the cloned directory
+
+```
+cd gamou
+```
+
 Add remote origin
 
 ```
 git remote add origin git@github.com:<YOUR GITHUB USERNAME>/gamou.git
 ```
 
-Complete the installation step as per the guide in the [README](./README.md)
+Install the dependences
 
-### Development
+```
+yarn install
+bundle install
+```
+
+Create a Postgres user
+
+_execute the commands in psql console_
+
+```
+CREATE USER gamou WITH ENCRYPTED PASSWORD 'gamou';
+ALTER USER gamou WITH SUPERUSER;
+```
+
+Create database and run the migrations
+
+```
+rails db:setup
+rails db:migrate
+```
+
+Run the app
+
+```
+rails s
+```
+
+_open another terminal_
+
+```
+bin/webpack-dev-server
+```
+
+Open in your favorite browser
+
+http://localhost:3000/
 
 ---
 
-**Whenever you send a pull request you must follow this work flow**
+## Development workflow
 
-Rebase with upstream
+See all [available commands](https://github.com/vczb/gamou/wiki/Available-commands)
 
-```
-git checkout main
-git fetch upstream
-git rebase upstream/main
-```
+Follow this [git workflow](https://github.com/vczb/gamou/wiki/Git-workflow)
 
-Create a new branch
-
-```
-git checkout -b MY-BRANCH-NAME
-```
-
-After making all the code modifications, you must run the tests and validations
-
-RSpec tests
-
-```
-rspec
-```
-
-Prettier validate
-
-```
-yarn prettier:check
-```
-
-Submit a Pull Request
-
-```
-git push upstram MY-BRANCH-NAME
-```
-
-A link will be generated and you will be forwarded to your project on github, do a new code check and then accept the pull request
-
-the [github-actions](https://docs.github.com/en/actions) will execute the [CI](https://github.com/vczb/gamou/actions), if the workflow is completed successfully, Heroku will generate a [review](https://devcenter.heroku.com/articles/github-integration-review-apps) link of your branch
-
-Wait for our approval, or request for review.
+If you are using VSCode we recommend [this extensions](https://github.com/vczb/gamou/wiki/Recommended-extensions-for-VSCode)
 
 ---
-
-### Upgrading your origin with upstream
-
-Switch to main branch
-
-```
-git checkout main
-```
-
-Fetch upstream updates
-
-```
-git fetch upstream
-```
-
-Reset hard as main
-
-```
-git reset --hard upstream/main
-```
-
-Push to the origin
-
-```
-git push origin main
-```
-
----
-
-If you have any questions, please open an [issue](https://github.com/vczb/gamou/issues)
 
 ## Thank you
+
+If you have any questions, please open an [issue](https://github.com/vczb/gamou/issues)
