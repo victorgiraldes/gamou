@@ -4,7 +4,7 @@
 
 ##### Close an issue ? please insert the hash
 
-...
+Close #?
 
 ##### Required migrations ?
 
