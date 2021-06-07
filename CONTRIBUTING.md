@@ -4,15 +4,15 @@ Gamou is a fully open source project. See the [LICENSE](./LICENSE) file for lice
 
 Before collaborating with the project, please read our [code of conduct](./CODE_OF_CONDUCT.md).
 
-See our [Wiki](https://github.com/vczb/gamou/wiki) for more information about the project
+See our [Wiki](https://github.com/vczb/gamou/wiki) for more information about the project.
 
 ---
 
-### Getting starter
+### Getting started
 
 We are very happy with your interest in collaborating on the project, before starting read this guide carefully. Before submitting any pull request see the [issues](https://github.com/vczb/gamou/issues) guide, if your demand is not there create a new one and wait for approval for development.
 
-We use [kanban](https://github.com/vczb/gamou/projects/1) as a workflow, take a look there and see what's going on
+We use [kanban](https://github.com/vczb/gamou/projects/1) as a workflow, take a look there and see what's going on.
 
 ---
 
