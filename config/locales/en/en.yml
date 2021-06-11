@@ -31,3 +31,100 @@
 
 en:
   hello: 'Hello world'
+  web:
+    title: Gamou - Fidelity program
+    enterprise:
+      name: Gamou
+    header:
+      login: Login
+    footer:
+      title: Let's keep in touch!
+      subtitle: Find us on any of these platforms.
+      copyright: Gamou © 2021. All rights reserved.
+      developed_by:
+        author: vczb
+        message: Developed by
+      menu:
+        useful_links: Useful links
+        other_resources: Other Resources
+        about_us: About Us
+        blog: Blog
+        our_plans: Our plans
+        terms: Terms & Conditions
+        privacy_policy: Privacy Policy
+        contact_us: Contact
+    form:
+      contact:
+        title: Want to send a message?
+        subtitle: Dui ut ornare lectus sit amet est placerat.
+        cta:
+          title: Send Message
+        name:
+          label: Full name
+          placeholder: Full name
+        email:
+          label: Email
+          placeholder: Email
+        message:
+          label: Message
+          placeholder: Enter a message...
+    home:
+      banner:
+        title: Loyalty has never been so easy
+        subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi quis commodo odio aenean sed. Nisl purus in mollis nunc sed id.
+      advantages:
+        first:
+          title: Conquer
+          subtitle: Lacinia quis vel eros donec ac odio tempor orci. Enim nec dui nunc mattis enim ut tellus. Ultrices vitae auctor bibendum.
+        second:
+          title: Retain
+          subtitle: In mollis nunc sed id semper. Cursus metus aliquam eleifend mi in nulla. Est lorem ipsum dolor sit amet.
+        third:
+          title: Loyalize
+          subtitle: Sed risus ultricies tristique nulla aliquet enim tortor at. Velit ut tortor pretium viverra suspendisse potenti nullam.
+      relationship:
+        title: Relationship with the customer base
+        subtitle:
+          first: Ornare massa eget egestas purus viverra accumsan in. Odio euismod lacinia at quis risus sed vulputate.
+          second: Id donec ultrices tincidunt arcu non sodales neque sodales ut. Vitae aliquet nec ullamcorper sit.
+        cta: I want to know more
+      real_time:
+        title: Follow in real time
+        subtitle: Quis auctor elit sed vulputate mi. Donec pretium vulputate sapien nec. Nulla pellentesque dignissim enim sit amet venenatis urna.
+      automated:
+        title: Complete and Automated
+        subtitle: Fusce id velit ut tortor pretium viverra suspendisse potenti. Ultrices in iaculis nunc sed augue lacus viverra vitae congue.
+        functionalities:
+          first: Easy to use
+          second: Control panel
+          third: Access from anywhere
+      our_plans:
+        title: Meet our plans
+        subtitle: At elementum eu facilisis sed odio morbi quis commodo odio. Cras pulvinar mattis nunc sed blandit. Ut placerat orci nulla pellentesque dignissim.
+        plans:
+          go: Access
+          trial:
+            title: Free
+            subtitle: 30 days
+          monthly:
+            title: US$ 50,00
+            subtitle: Monthly
+          semester:
+            title: US$ 30,00
+            subtitle: Semester
+          yearly:
+            title: US$ 25,00
+            subtitle: Yearly
+      innovation:
+        title: Modern technologies
+        subtitle: Vel turpis nunc eget lorem dolor sed. Vulputate sapien nec sagittis aliquam malesuada bibendum arcu vitae. Tempus egestas sed sed risus pretium. Pulvinar pellentesque habitant morbi tristique senectus et netus et.
+        seals:
+          first:
+            title: Certified product
+            subtitle: Integer vitae justo eget magna fermentum ac auctor augue mauris augue neque grasvda.
+          second:
+            title: Data security
+            subtitle: Faucibus nisl tincidunt eget nullam non nisi viverra accumsan in nisl nisi scelerisque.
+          third:
+            title: Frequent updates
+            subtitle: Elementum nibh tellus molestie nunc. Malesuada fames ac eget aliquet viverra tellus in hac.

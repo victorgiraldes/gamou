@@ -231,7 +231,7 @@ pt-BR:
     footer:
       title: Vamos manter contato!
       subtitle: Encontre-nos em qualquer uma dessas plataformas.
-      copyright: Gamou © 2021. Todos os diretos reservados.
+      copyright: Gamou © 2021. Todos os direitos reservados.
       developed_by:
         author: vczb
         message: Desenvolvido por
@@ -290,7 +290,7 @@ pt-BR:
           second: Painel de controle
           third: Acesse de qualquer lugar
       our_plans:
-        title: Conheça nosssos planos
+        title: Conheça nossos planos
         subtitle: At elementum eu facilisis sed odio morbi quis commodo odio. Cras pulvinar mattis nunc sed blandit. Ut placerat orci nulla pellentesque dignissim.
         plans:
           go: Acessar
@@ -300,10 +300,10 @@ pt-BR:
           monthly:
             title: R$ 50,00
             subtitle: Mensal
-          semiannual:
+          semester:
             title: R$ 30,00
             subtitle: Semestral
-          annual:
+          yearly:
             title: R$ 25,00
             subtitle: Anual
       innovation:
