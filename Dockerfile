@@ -1,5 +1,7 @@
 FROM ruby:3.0.0
 
+RUN useradd -ms /bin/bash user
+
 RUN apt-get update -qq && apt-get install -y postgresql-client
 
 RUN curl -sL https://deb.nodesource.com/setup_14.x | bash -
@@ -11,18 +13,17 @@ RUN apt update
 RUN apt list --upgradable
 RUN apt install -y yarn
 
-RUN mkdir /gamou
-WORKDIR /gamou
-COPY Gemfile /gamou/Gemfile
-COPY Gemfile.lock /gamou/Gemfile.lock
+ENV APP_HOME /gamou
+RUN mkdir $APP_HOME
+RUN chown user $APP_HOME
+USER user
+WORKDIR $APP_HOME
+ADD . $APP_HOME
+
 RUN yarn install
 RUN bundle install
 
-COPY . /gamou
-
-COPY entrypoint.sh /usr/bin/
-RUN chmod +x /usr/bin/entrypoint.sh
-ENTRYPOINT ["entrypoint.sh"]
+ENTRYPOINT ["sh", "./entrypoint.sh"]
 
 EXPOSE 3000
 EXPOSE 3035

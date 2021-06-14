@@ -1,21 +1,19 @@
 version: '3'
 services:
-  db:
+  database:
     container_name: gamou_db
     network_mode: 'host'
-    restart: on-failure
     image: postgres:13-alpine
     volumes:
-      - /var/lib/postgresql/data
+      - pg_data:/var/lib/postgresql/data
     environment:
       POSTGRES_USER: gamou
       POSTGRES_PASSWORD: gamou
     ports:
       - '5432:5432'
-  app:
+  rails:
     container_name: gamou_app
     network_mode: 'host'
-    restart: on-failure
     build: .
     command: ['/bin/bash', './entrypoint.sh']
     volumes:
@@ -24,4 +22,7 @@ services:
       - '3000:3000'
       - '3035:3035'
     depends_on:
-      - db
+      - database
+
+volumes:
+  pg_data:
