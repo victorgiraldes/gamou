@@ -6,4 +6,11 @@ class User < ApplicationRecord
          :recoverable,
          :rememberable,
          :validatable
+
+  validates :company_name,
+            :owner_name,
+            :phone,
+            :plan,
+            presence: true,
+            on: :update
 end
