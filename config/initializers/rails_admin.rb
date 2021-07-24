@@ -41,4 +41,50 @@ RailsAdmin.config do |config|
     # history_index
     # history_show
   end
+
+  config.model 'User' do
+    exclude_fields :reset_password_token,
+                   :encrypted_password,
+                   :password,
+                   :password_confirmation,
+                   :reset_password_sent_at,
+                   :remember_created_at
+  end
+
+  config.model 'Customer' do
+    show do
+      field :name
+      field :email
+      field :phone
+      field :gender
+      field :cpf
+      field :birthday
+      field :user do
+        pretty_value { value.email }
+      end
+    end
+    list do
+      field :name
+      field :email
+      field :phone
+      field :gender
+      field :cpf
+      field :birthday
+      field :user do
+        pretty_value { value.email }
+      end
+    end
+    edit do
+      field :name
+      field :email
+      field :phone
+      field :gender
+      field :cpf
+      field :birthday
+      field :user_id do
+        read_only true
+        pretty_value { bindings[:object].user.email }
+      end
+    end
+  end
 end

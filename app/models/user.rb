@@ -13,4 +13,6 @@ class User < ApplicationRecord
             :plan,
             presence: true,
             on: :update
+
+  enum plan: %i[trial monthly yearly]
 end
