@@ -4,10 +4,13 @@ RailsAdmin.config do |config|
   ### Popular gems integration
 
   ## == Devise ==
-  # config.authenticate_with do
-  #   warden.authenticate! scope: :user
-  # end
-  # config.current_user_method(&:current_user)
+
+  config.authenticate_with do
+    redirect_to main_app.root_path unless current_user.try(:is_admin?)
+
+    warden.authenticate! scope: :user
+  end
+  config.current_user_method(&:current_user)
 
   ## == CancanCan ==
   # config.authorize_with :cancancan
@@ -40,5 +43,49 @@ RailsAdmin.config do |config|
     ## With an audit adapter, you can add:
     # history_index
     # history_show
+  end
+
+  config.model 'User' do
+    exclude_fields :reset_password_token,
+                   :encrypted_password,
+                   :reset_password_sent_at,
+                   :remember_created_at
+  end
+
+  config.model 'Customer' do
+    show do
+      field :name
+      field :email
+      field :phone
+      field :gender
+      field :cpf
+      field :birthday
+      field :user do
+        pretty_value { value.email }
+      end
+    end
+    list do
+      field :name
+      field :email
+      field :phone
+      field :gender
+      field :cpf
+      field :birthday
+      field :user do
+        pretty_value { value.email }
+      end
+    end
+    edit do
+      field :name
+      field :email
+      field :phone
+      field :gender
+      field :cpf
+      field :birthday
+      field :user_id do
+        read_only true
+        pretty_value { bindings[:controller].current_user.id }
+      end
+    end
   end
 end
