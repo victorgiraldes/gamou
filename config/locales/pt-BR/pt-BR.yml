@@ -385,19 +385,15 @@ pt-BR:
           trial:
             title: Grátis
             subtitle: 30 dias
-            full_name: Plano de teste
           monthly:
             title: R$ 50,00
             subtitle: Mensal
-            full_name: Plano mensal
           semester:
             title: R$ 30,00
             subtitle: Semestral
-            full_name: Plano semestral
           yearly:
             title: R$ 25,00
             subtitle: Anual
-            full_name: Plano anual
       innovation:
         title: Tecnologia de ponta
         subtitle: Vel turpis nunc eget lorem dolor sed. Vulputate sapien nec sagittis aliquam malesuada bibendum arcu vitae. Tempus egestas sed sed risus pretium. Pulvinar pellentesque habitant morbi tristique senectus et netus et.
@@ -427,3 +423,13 @@ pt-BR:
       customers: Clientes
       gender: Gênero
       age: Idade
+    user:
+      plan:
+        trial:
+          title: Plano de teste
+        monthly:
+          title: Plano mensal
+        semester:
+          title: Plano semestral
+        yearly:
+          title: Plano anual
