@@ -46,8 +46,7 @@
             </div>
             <div class="form-group">
               <p class="leading-relaxed mt-1 mb-4 text-blueGray-500">
-                <% plan = 'web.user.plan.' + current_user.plan + '.title' %>
-                <%= I18n.t plan %>
+                <%= get_user_pan(current_user.plan) %>
               </p>
             </div>
             <div class="form-group">
