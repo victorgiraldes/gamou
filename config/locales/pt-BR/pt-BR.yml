@@ -306,6 +306,9 @@ pt-BR:
   verbs:
     confirm: Confirmar
     edit: Editar
+    create: Criar
+    new: Novo
+    delete: Deletar
   web:
     title: Gamou - Programa de fidelidade
     close: Fechar
@@ -316,6 +319,7 @@ pt-BR:
       logout: Sair
       account: Minha conta
       dashboard: Painel de controle
+      product: Meus produtos
     footer:
       title: Vamos manter contato!
       subtitle: Encontre-nos em qualquer uma dessas plataformas.
@@ -433,3 +437,24 @@ pt-BR:
           title: Plano semestral
         yearly:
           title: Plano anual
+    product:
+      new: Novo
+      edit: Editar
+      delete: Deletar
+      your_products: Seus produtos cadastrados
+      create_new: Criar novo produto
+      no_products: Nenhum produto cadastrado
+      new_product: Novo Produto
+      edit_product: Editar Produto
+      diamonds: Diamantes
+      actions:
+        create:
+          success: Produto adicionado com sucesso!
+          fail: Erro ao adicionar produto.
+        update:
+          success: Produto atualizado com sucesso!
+          fail: Erro ao atualizar produto.
+        destroy:
+          success: Produto deletado com sucesso!
+          fail: Erro ao deletado produto.
+          confirm: Você tem certeza que quer deletar este produto ?

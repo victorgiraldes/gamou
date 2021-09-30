@@ -116,6 +116,9 @@ en:
   verbs:
     confirm: Confirm
     edit: Edit
+    create: Create
+    new: New
+    delete: Delete
   web:
     title: Gamou - Fidelity program
     close: Close
@@ -126,6 +129,7 @@ en:
       logout: Logout
       account: My Account
       dashboard: Dashboard
+      product: My products
     footer:
       title: Let's keep in touch!
       subtitle: Find us on any of these platforms.
@@ -243,3 +247,24 @@ en:
           title: Semester plan
         yearly:
           title: Yearly plan
+    product:
+      new: New
+      edit: Edit
+      delete: Delete
+      your_products: Your registered products
+      create_new: Create new product
+      no_products: No products registered
+      new_product: New Product
+      edit_product: Edit Produto
+      diamonds: Diamonds
+      actions:
+        create:
+          success: Product successfully added!
+          fail: Error adding product.
+        update:
+          success: Product successfully updated!
+          fail: Error updating product.
+        destroy:
+          success: Product successfully destroyed!
+          fail: Error destroyng product.
+          confirm: You sure?

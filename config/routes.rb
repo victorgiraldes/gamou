@@ -13,5 +13,12 @@ Rails
 
       get 'admin', to: 'admin/dashboard#index'
       get 'dashboard', to: 'dashboard#index'
+
+      get 'product', to: 'product#index'
+      get 'product/new', to: 'product#new'
+      get 'product/edit', to: 'product#edit'
+      put 'product/update', to: 'product#update'
+      post 'product/create', to: 'product#create'
+      delete 'product/destroy', to: 'product#destroy'
     end
   end
