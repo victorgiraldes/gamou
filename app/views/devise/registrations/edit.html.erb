@@ -20,11 +20,25 @@
                 <p>Currently waiting confirmation for: <%= resource.unconfirmed_email %></p>
               <% end %>
             </div>
+              <div class="form-group">
+                <%= f.input :password,
+                label_html: { class: "form-label label-small" },
+                input_html: { autocomplete: "new-password", class: 'form-text'  } %>
+                <i class="font-light text-xs label-small text-blueGray-700">
+                  <%=  I18n.t('devise.registrations.edit.leave_blank_if_you_don_t_want_to_change_it') %>
+                </i>
+              </div>
+
+            <div class="form-group">
+              <%= f.input :password_confirmation,
+                label_html: { class: "form-label label-small" },
+                input_html: { autocomplete: "new-password",  class: 'form-text' } %>
+            </div>
             <div class="form-group">
               <%= f.input :company_name,
                 required: true,
                 label_html: { class: "form-label label-small" },
-                input_html: { class: 'form-text'  } %>
+                input_html: { class: 'form-text' } %>
             </div>
             <div class="form-group">
               <%= f.input :owner_name,
@@ -43,6 +57,15 @@
                 required: true,
                 label_html: { class: "form-label label-small" },
                 input_html: { class: 'form-text' } %>
+            </div>
+            <div class="form-group">
+              <%= f.input :current_password,
+              required: true,
+              label_html: { class: "form-label label-small" },
+              input_html: { autocomplete: "current-password", class: 'form-text' } %>
+              <i class="font-light text-xs label-small text-blueGray-700">
+                <%= I18n.t('devise.registrations.edit.we_need_your_current_password_to_confirm_your_changes') %>
+              </i>
             </div>
             <div class="form-group">
               <p class="leading-relaxed mt-1 mb-4 text-blueGray-500">
