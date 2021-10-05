@@ -18,7 +18,9 @@ class ApplicationController < ActionController::Base
   protected
 
   def configure_permitted_parameters
-    devise_parameter_sanitizer.permit(:account_update, keys: [:company_name, :owner_name, :phone, :diamond_price_in_cents])
+    devise_parameter_sanitizer.permit(
+      :account_update,
+      keys: %i[company_name owner_name phone diamond_price_in_cents]
+    )
   end
-
 end

@@ -48,6 +48,9 @@ en:
       update_needs_confirmation: 'You updated your account successfully, but we need to verify your new email address. Please check your email and follow the confirmation link to confirm your new email address.'
       updated: 'Your account has been updated successfully.'
       updated_but_not_signed_in: 'Your account has been updated successfully, but since your password was changed, you need to sign in again.'
+      edit:
+        we_need_your_current_password_to_confirm_your_changes: 'we need your current password to confirm your changes'
+        leave_blank_if_you_don_t_want_to_change_it: leave blank if you don't want to change it
       new:
         sign_up: Sign up
     sessions:
