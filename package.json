@@ -25,6 +25,12 @@
   },
   "scripts": {
     "prettier:format": "prettier --write \"app/**/*.{rb, erb}\"",
-    "prettier:check": "prettier -c \"app/**/*.{rb, erb}\""
+    "prettier:check": "prettier -c \"app/**/*.{rb, erb}\"",
+    "app:console": "docker exec -it gamou_app rails c",
+    "app:migrate": "docker exec -it gamou_app rails db:migrate",
+    "db:up": "docker-compose -f ./docker-compose.yml up -d database",
+    "db:down": "docker-compose -f ./docker-compose.yml down database",
+    "app:up": "docker-compose -f ./docker-compose.yml up rails",
+    "app:down": "docker-compose -f ./docker-compose.yml down rails"
   }
 }
