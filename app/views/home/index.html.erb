@@ -6,7 +6,7 @@
     <div class="container relative mx-auto mt-10">
       <div class="items-center flex flex-wrap">
         <div class="w-full lg:w-8/12 px-4 ml-auto mr-auto text-center">
-          <div class="pr-12">
+          <div>
             <h1 class="text-white font-semibold text-5xl"><%= t 'web.home.banner.title' %></h1>
             <p class="mt-4 text-lg text-blueGray-200"><%= t 'web.home.banner.subtitle' %></p>
           </div>
@@ -72,8 +72,8 @@
           </a>
         </div>
         <div class="w-full md:w-4/12 px-4 mr-auto ml-auto">
-          <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-pink-600">
-            <img alt="<%= t 'web.home.real_time.title' %>" src="<%= image_path('home/real_time.jpg') %>" class="w-full align-middle rounded-t-lg">
+          <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-pink-600 mt-3">
+            <img alt="<%= t 'web.home.real_time.title' %>" src="<%= image_path('home/real_time.jpg') %>" class="w-full align-middle rounded-t-lg ">
             <blockquote class="relative p-8 mb-4">
               <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95" class="absolute left-0 w-full block" style="height:95px;top:-94px">
                 <polygon points="-30,95 583,95 583,65" class="text-pink-600 fill-current"></polygon>
@@ -95,7 +95,7 @@
     <div class="container mx-auto px-4">
       <div class="items-center flex flex-wrap">
         <div class="w-full md:w-4/12 ml-auto mr-auto px-4">
-          <img alt="<%= t 'web.home.automated.title' %>" class="max-w-full rounded-lg shadow-lg" src="<%= image_path('home/complete.jpg') %>">
+          <img alt="<%= t 'web.home.automated.title' %>" class="max-w-full rounded-lg shadow-lg mb-5" src="<%= image_path('home/complete.jpg') %>">
         </div>
         <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
           <div class="md:pr-12">
@@ -246,7 +246,7 @@
         <polygon class="text-blueGray-800 fill-current" points="2560 0 2560 100 0 100"></polygon>
       </svg>
     </div>
-    <div class="container mx-auto px-4 lg:pt-24 lg:pb-64">
+    <div class="container mx-auto px-4 pt-10 lg:pt-24 lg:pb-64 ">
       <div class="flex flex-wrap text-center justify-center">
         <div class="w-full lg:w-6/12 px-4">
           <h2 class="text-4xl font-semibold text-white">
@@ -294,8 +294,8 @@
       </div>
     </div>
   </section>
-  <section class="relative block py-24 lg:pt-0 bg-blueGray-800">
-    <div class="container mx-auto px-4">
+  <section class=" block py-24 lg:pt-0 bg-blueGray-800">
+    <div class="container mx-auto px-4 mt-10">
       <%= render 'shared/contact_form'  %>
     </div>
   </section>
