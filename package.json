@@ -26,12 +26,13 @@
   "scripts": {
     "prettier:format": "prettier --write \"app/**/*.{rb, erb}\"",
     "prettier:check": "prettier -c \"app/**/*.{rb, erb}\"",
+    "docker:build": "docker-compose build",
+    "app:up": "docker-compose -f ./docker-compose.yml up rails",
+    "app:down": "docker-compose -f ./docker-compose.yml down rails",
     "app:console": "docker exec -it gamou_app rails c",
     "app:migrate": "docker exec -it gamou_app rails db:migrate",
-    "app:attach": "yarn app:up -d && docker attach gamou_app",
+    "app:attach": "docker-compose up -d && docker attach gamou_app",
     "db:up": "docker-compose -f ./docker-compose.yml up -d database",
-    "db:down": "docker-compose -f ./docker-compose.yml down database",
-    "app:up": "docker-compose -f ./docker-compose.yml up rails",
-    "app:down": "docker-compose -f ./docker-compose.yml down rails"
+    "db:down": "docker-compose -f ./docker-compose.yml down database"
   }
 }
