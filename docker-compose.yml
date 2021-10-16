@@ -12,6 +12,8 @@ services:
     ports:
       - '5432:5432'
   rails:
+    tty: true
+    stdin_open: true
     container_name: gamou_app
     network_mode: 'host'
     build: .
